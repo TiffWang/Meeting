@@ -1,0 +1,14 @@
+C:\SVN\Meeting\Meeting\obj\Debug\Meeting.csprojResolveAssemblyReference.cache
+C:\SVN\Meeting\Meeting\bin\Meeting.dll
+C:\SVN\Meeting\Meeting\bin\Meeting.pdb
+C:\SVN\Meeting\Meeting\bin\BusinessTier.dll
+C:\SVN\Meeting\Meeting\bin\Entities.dll
+C:\SVN\Meeting\Meeting\bin\Infrastructure.dll
+C:\SVN\Meeting\Meeting\bin\log4net.dll
+C:\SVN\Meeting\Meeting\bin\Oracle.DataAccess.dll
+C:\SVN\Meeting\Meeting\bin\MySql.Data.dll
+C:\SVN\Meeting\Meeting\bin\BusinessTier.pdb
+C:\SVN\Meeting\Meeting\bin\Entities.pdb
+C:\SVN\Meeting\Meeting\bin\Infrastructure.pdb
+C:\SVN\Meeting\Meeting\obj\Debug\Meeting.dll
+C:\SVN\Meeting\Meeting\obj\Debug\Meeting.pdb

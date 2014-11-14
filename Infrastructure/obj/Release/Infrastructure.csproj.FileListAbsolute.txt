@@ -1,0 +1,5 @@
+C:\SVN\NewERPProjects\SourceCodes\NewERP-Application\NewWebSite\NewWebSite\Infrastructure\bin\Release\Infrastructure.dll
+C:\SVN\NewERPProjects\SourceCodes\NewERP-Application\NewWebSite\NewWebSite\Infrastructure\bin\Release\Infrastructure.pdb
+C:\SVN\NewERPProjects\SourceCodes\NewERP-Application\NewWebSite\NewWebSite\Infrastructure\bin\Release\MySql.Data.dll
+C:\SVN\NewERPProjects\SourceCodes\NewERP-Application\NewWebSite\NewWebSite\Infrastructure\obj\Release\Infrastructure.dll
+C:\SVN\NewERPProjects\SourceCodes\NewERP-Application\NewWebSite\NewWebSite\Infrastructure\obj\Release\Infrastructure.pdb

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="H:\Lottery\BusinessTier\bin\Debug\BusinessTier.dll" total="2" errors="1" failures="0" not-run="1" inconclusive="0" ignored="0" skipped="0" invalid="1" date="2013-02-26" time="21:25:54">
+  <environment nunit-version="2.6.2.12296" clr-version="2.0.50727.5466" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="H:\Lottery\BusinessTier\bin\Debug" machine-name="TIFF-NB" user="Tiff" user-domain="Tiff-NB" />
+  <culture-info current-culture="zh-CN" current-uiculture="zh-CN" />
+  <test-suite type="Assembly" name="H:\Lottery\BusinessTier\bin\Debug\BusinessTier.dll" executed="True" result="Failure" success="False" time="0.018" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="BusinessTier" executed="True" result="Failure" success="False" time="0.018" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="NUnitTest" executed="True" result="Failure" success="False" time="0.017" asserts="0">
+            <results>
+              <test-case name="BusinessTier.NUnitTest.Test" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+              <test-case name="BusinessTier.NUnitTest.Test1" executed="True" result="Error" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[System.DivideByZeroException : 尝试除以零。]]></message>
+                  <stack-trace><![CDATA[在 BusinessTier.NUnitTest.Test1() 位置 H:\Lottery\BusinessTier\NUnitTest.cs:行号 27
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-suite type="ParameterizedTest" name="Test2" executed="True" result="Failure" success="False" time="0.002" asserts="0">
+                <results>
+                  <test-case name="BusinessTier.NUnitTest.Test2(1)" executed="False" result="NotRunnable">
+                    <reason>
+                      <message><![CDATA[Test method has non-void return type, but no result is expected]]></message>
+                    </reason>
+                  </test-case>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

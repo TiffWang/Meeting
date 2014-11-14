@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Entities.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="EntitiesStoreContainer">
+          <EntitySet Name="tblActivity" EntityType="Entities.Store.tblActivity" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblCount" EntityType="Entities.Store.tblCount" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblCustomer" EntityType="Entities.Store.tblCustomer" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblInvite" EntityType="Entities.Store.tblInvite" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="tblActivity">
+          <Key>
+            <PropertyRef Name="ActivityID" />
+          </Key>
+          <Property Name="ActivityID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="ActivityTime" Type="datetime" />
+          <Property Name="Type" Type="nvarchar" MaxLength="50" />
+          <Property Name="City" Type="nvarchar" MaxLength="50" />
+          <Property Name="Address" Type="nvarchar" MaxLength="200" />
+          <Property Name="IndustryDes" Type="nvarchar" MaxLength="100" />
+          <Property Name="AttendTotal" Type="int" />
+          <Property Name="SignedTotal" Type="int" />
+          <Property Name="SignedAmount" Type="decimal" Scale="2" />
+          <Property Name="StartTime" Type="datetime" />
+          <Property Name="EndTime" Type="datetime" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblCount">
+          <Key>
+            <PropertyRef Name="Total" />
+          </Key>
+          <Property Name="Total" Type="int" Nullable="false" />
+          <Property Name="Signed" Type="int" />
+          <Property Name="Quarter" Type="int" />
+          <Property Name="QuaTotal" Type="int" />
+          <Property Name="QuaSigned" Type="int" />
+          <Property Name="Week" Type="int" />
+          <Property Name="WeekSigned" Type="int" />
+        </EntityType>
+        <EntityType Name="tblCustomer">
+          <Key>
+            <PropertyRef Name="CustomerID" />
+          </Key>
+          <Property Name="CustomerID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerName" Type="nvarchar" MaxLength="50" />
+          <Property Name="City" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="tblInvite">
+          <Key>
+            <PropertyRef Name="InviteID" />
+          </Key>
+          <Property Name="InviteID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerID" Type="nvarchar" MaxLength="50" />
+          <Property Name="CustomerName" Type="nvarchar" MaxLength="100" />
+          <Property Name="Industry" Type="nvarchar" MaxLength="50" />
+          <Property Name="IndustryDes" Type="nvarchar" MaxLength="100" />
+          <Property Name="Area" Type="nvarchar" MaxLength="50" />
+          <Property Name="AreaDes" Type="nvarchar" MaxLength="50" />
+          <Property Name="ContactName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Contact" Type="nvarchar" MaxLength="50" />
+          <Property Name="Attend" Type="bit" />
+          <Property Name="AttendTime" Type="date" />
+          <Property Name="IsExternal" Type="bit" />
+          <Property Name="Status" Type="nvarchar" MaxLength="50" />
+          <Property Name="ProductName" Type="nvarchar" MaxLength="500" />
+          <Property Name="ProductAmount" Type="float" />
+          <Property Name="SignedTime" Type="date" />
+          <Property Name="ActivityID" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreateTime" Type="date" />
+        </EntityType>
+        <Function Name="ProCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Entities" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="DataBase" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblActivity" EntityType="Entities.ActivityRow" />
+          <EntitySet Name="tblCustomer" EntityType="Entities.CustomerRow" />
+          <EntitySet Name="tblInvite" EntityType="Entities.InviteRow" />
+          <EntitySet Name="tblCount" EntityType="Entities.CountRow" />
+          <FunctionImport Name="ProCount" />
+        </EntityContainer>
+        <EntityType Name="ActivityRow">
+          <Key>
+            <PropertyRef Name="ActivityID" />
+          </Key>
+          <Property Name="ActivityID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ActivityTime" Type="DateTime" />
+          <Property Name="Type" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="City" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Address" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="IndustryDes" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="AttendTotal" Type="Int32" />
+          <Property Name="SignedTotal" Type="Int32" />
+          <Property Name="SignedAmount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="StartTime" Type="DateTime" />
+          <Property Name="EndTime" Type="DateTime" />
+          <Property Name="CreateTime" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="CustomerRow">
+          <Key>
+            <PropertyRef Name="CustomerID" />
+          </Key>
+          <Property Name="CustomerID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="City" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="InviteRow">
+          <Key>
+            <PropertyRef Name="InviteID" />
+          </Key>
+          <Property Name="InviteID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="CustomerName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Industry" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="IndustryDes" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Area" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="AreaDes" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ContactName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Contact" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Attend" Type="Boolean" />
+          <Property Name="AttendTime" Type="DateTime" />
+          <Property Name="IsExternal" Type="Boolean" />
+          <Property Name="Status" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ProductName" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="ProductAmount" Type="Double" />
+          <Property Name="SignedTime" Type="DateTime" />
+          <Property Name="ActivityID" Type="String" />
+          <Property Name="CreateTime" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="CountRow">
+          <Key>
+            <PropertyRef Name="Total" />
+          </Key>
+          <Property Type="Int32" Name="Total" Nullable="false" />
+          <Property Type="Int32" Name="Signed" />
+          <Property Type="Int32" Name="Quarter" />
+          <Property Type="Int32" Name="QuaTotal" />
+          <Property Type="Int32" Name="QuaSigned" />
+          <Property Type="Int32" Name="Week" />
+          <Property Type="Int32" Name="WeekSigned" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EntitiesStoreContainer" CdmEntityContainer="DataBase">
+          <EntitySetMapping Name="tblActivity">
+            <EntityTypeMapping TypeName="Entities.ActivityRow">
+              <MappingFragment StoreEntitySet="tblActivity">
+                <ScalarProperty Name="ActivityID" ColumnName="ActivityID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ActivityTime" ColumnName="ActivityTime" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="IndustryDes" ColumnName="IndustryDes" />
+                <ScalarProperty Name="AttendTotal" ColumnName="AttendTotal" />
+                <ScalarProperty Name="SignedTotal" ColumnName="SignedTotal" />
+                <ScalarProperty Name="SignedAmount" ColumnName="SignedAmount" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblCustomer">
+            <EntityTypeMapping TypeName="Entities.CustomerRow">
+              <MappingFragment StoreEntitySet="tblCustomer">
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="City" ColumnName="City" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblInvite">
+            <EntityTypeMapping TypeName="Entities.InviteRow">
+              <MappingFragment StoreEntitySet="tblInvite">
+                <ScalarProperty Name="InviteID" ColumnName="InviteID" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="Industry" ColumnName="Industry" />
+                <ScalarProperty Name="IndustryDes" ColumnName="IndustryDes" />
+                <ScalarProperty Name="Area" ColumnName="Area" />
+                <ScalarProperty Name="AreaDes" ColumnName="AreaDes" />
+                <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+                <ScalarProperty Name="Contact" ColumnName="Contact" />
+                <ScalarProperty Name="Attend" ColumnName="Attend" />
+                <ScalarProperty Name="AttendTime" ColumnName="AttendTime" />
+                <ScalarProperty Name="IsExternal" ColumnName="IsExternal" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="ProductAmount" ColumnName="ProductAmount" />
+                <ScalarProperty Name="SignedTime" ColumnName="SignedTime" />
+                <ScalarProperty Name="ActivityID" ColumnName="ActivityID" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblCount">
+            <EntityTypeMapping TypeName="Entities.CountRow">
+              <MappingFragment StoreEntitySet="tblCount">
+                <ScalarProperty Name="WeekSigned" ColumnName="WeekSigned" />
+                <ScalarProperty Name="Week" ColumnName="Week" />
+                <ScalarProperty Name="QuaSigned" ColumnName="QuaSigned" />
+                <ScalarProperty Name="QuaTotal" ColumnName="QuaTotal" />
+                <ScalarProperty Name="Quarter" ColumnName="Quarter" />
+                <ScalarProperty Name="Signed" ColumnName="Signed" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="ProCount" FunctionName="Entities.Store.ProCount" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="False" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Entities">
+        <EntityTypeShape EntityType="Entities.ActivityRow" Width="1.5" PointX="0.75" PointY="0.75" Height="3.3985807291666665" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities.CustomerRow" Width="1.5" PointX="2.75" PointY="0.75" Height="1.5506396484374996" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities.InviteRow" Width="1.5" PointX="2.75" PointY="3.75" Height="4.32255126953125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Entities.CountRow" Width="1.5" PointX="5.375" PointY="0.75" Height="2.2898160807291656" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

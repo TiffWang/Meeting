@@ -1,0 +1,343 @@
+@charset "utf-8";
+/*all css start*/
+body,div,p,span,ul,li,ol,h1,h2,h3,h4,h5,h6,sub,b,i,table,thead,tbody,tr,td,th,input,select,textarea,form,img,a,dl,dd,dt,em,i{ padding:0; margin:0; font-size:12px; font-family:"微软雅黑",Verdana, Arial, Helvetica, sans-serif; color:#666; }
+body{ background-color:#e9e8e8; }
+ul,li{ list-style:none; }
+.center{ margin:0 auto; }
+
+/*header css start*/
+.header{ height:122px; width:100%; background:url(../images/header-bj.png) repeat-x top; }
+.header .top{ width:100%; height:80px; position:relative; }
+.header .top img.logo{ float:left; margin-right:10px; }
+.header .top b.version{ float:left; line-height:80px; color:#bce0ff; font-weight:normal; }
+.header .top .user{ position:absolute; top:14px; right:20px; width:320px; }
+.header .top .user div.picture{ float:left; display:inline-block; width:50px; height:50px; background:url(../images/picture.png); }
+.header .top .user ul{ float:left; display:inline-block; padding-left:10px; }
+.header .top .user ul li,.header .top .user ul li b,.header .top .user ul li a{ color:#bce0ff; text-decoration:none; }
+.header .top .user ul li a:hover{ color:#e2f2ff; }
+.header .top .user ul li{ height:25px; line-height:25px;}
+.header .top .user ul li label.side{ display:inline-block; background:url(../images/x1.gif) no-repeat 0 0; width:1px; height:15px; vertical-align:-4px; margin:0 8px; }
+.header .top .user ul li.button a{ background:url(../images/icon.gif) no-repeat; text-indent:22px; display:inline-block; }
+.header .top .user ul li.button a,.header .top .user ul li.button label.side{ float:left; }
+.header .top .user ul li.button label.side{ height:25px; background-position:0 6px;}
+.header .top .user ul li.button a.pic1{ background-position:0 5px; }
+.header .top .user ul li.button a.pic2{ background-position:0 -17px; }
+.header .top .user ul li.button a.pic3{ background-position:0 -38px; }
+
+/* nav css start */
+.header .nav{ height:37px; width:100%; position:relative; }
+.header .nav ul{ float:left; display:inline-block;}
+.header .nav ul li{ height:37px; width:86px; float:left; background:url(../images/nav-side.png) no-repeat 84px 0; }
+.header .nav ul li a{ display:block; height:37px; line-height:37px; text-align:center; font-weight:bold; text-decoration:none; }
+.header .nav ul li.side{ width:16px; background-position:14px 0; }
+.header .nav ul li a:hover,.header .nav ul li a.selected{ background:url(../images/nav-bj.png) no-repeat -1px 0; color:#fff; }
+.header .nav div.children{ background:none; width:98%; height:37px; line-height:37px; color:#cfcfcf; position:absolute; margin-left:1%; top:37px; }
+.header .nav div.children a{ display:inline-block; margin:0 5px; text-decoration:none; }
+.header .nav div.children a:hover,.header .nav div.children a.selected{ background:none; color:#0c69b5; }
+.header .nav .clocktime{ width:130px; height:28px; background:url(../images/clocktime-bj.png) no-repeat; line-height:28px; padding-left:35px; position:absolute; top:5px; right:34px; }
+.header .nav a.submit{ width:12px; height:11px; background:url(../images/submit1.png); position:absolute; top:13px; right:12px; overflow:hidden; }
+
+/* main css start */
+.main{ width:100%; height:auto; }
+.main .path{ height:34px; line-height:28px; text-align:right; padding-right:2%; color:#999; }
+.main .content{ width:1400px; height:auto; background:#fbfbfb url(../images/submenu-bj.png) repeat-y right; border:1px solid #cbcbcb; overflow:hidden; }
+.main .content .left{ width:1302px; height:auto; padding:15px; float:left; }
+.main .content .left .table{ background-color:#f0efef; padding:2px; }
+.main .content .left .table table{ border: 1px solid #d9d9d9; width:100%; background:#fbfbfb; }
+.main .content .left .table table thead tr td{ height:31px; background:url(../images/table-bj.png) repeat-x; }
+.main .content .left .table table thead tr td div.table-headerCell{ background:url(../images/table-thead-side.png) no-repeat 0 0; height:30px; line-height:30px; text-indent:10px; }
+.main .content .left .table table thead tr td div.table-headerCell-outer{ position:relative; }
+.main .content .left .table table thead tr td div.table-headerCell-outer span.table-sortIcon{ width:8px; height:5px; background:url(../images/sub.gif) no-repeat 0 -4px; position:absolute; top:12px; right:10px; cursor:pointer; overflow:hidden; }
+.main .content .left .table table thead tr td div.table-headerCell-outer span.selected{ background-position:0 0; }
+.main .content .left .table table thead tr td div.none{ background:none; }
+.main .content .left .table table tbody tr td{ height:29px; border-top:1px solid #ebebeb; vertical-align:middle; padding:0 10px; }
+.main .content .left .table table tbody tr td a{ color:#0c69b5; text-decoration:none; }
+.main .content .left .table table tbody tr td a:hover{ color:#FF6600; text-decoration:underline; }
+.main .content .left .table table tbody tr td label.side{ margin:0 3px; color:#ccc; }
+.main .content .left .table .operate{ height:34px; background:url(../images/operate-bj.png) repeat-x; border:1px solid #d9d9d9; border-top:none; border-bottom-color:#d3d3d3; }
+
+.main .content .left .table .operate .button{ display:inline-block; float:left; padding:6px 0 0 10px; }
+.main .content .left .table .operate .button span.box{ float:left; display:inline-block; }
+.main .content .left .table .operate .button span.box label{ display:inline-block; line-height:23px; padding:0 10px 0 5px; color:#0c69b5; }
+.main .content .left .table .operate .button span.box input{ vertical-align:-2px;}
+.main .content .left .table .operate .button .but{display:inline-block; float:left; }
+.main .content .left .table .operate .button .but li{ float:left; width:84px; height:24px; margin-right:5px; }
+.main .content .left .table .operate .button .but li a{ display:inline-block; line-height:23px; text-decoration:none; color:#888; background:url(../images/button.png) no-repeat; }
+.main .content .left .table .operate .button .but li a:hover{ color:#0c69b5; }
+
+.main .content .left .table .operate .button .but li.cancel{ width:84px; height:24px; }
+.main .content .left .table .operate .button .but li.cancel a{ width:57px; height:24px; padding-left:27px; background-position:0 0; }
+.main .content .left .table .operate .button .but li.cancel a:hover{ background-position:0 -24px; }
+
+.main .content .left .table .operate .button .but li.add{ width:68px; height:24px; }
+.main .content .left .table .operate .button .but li.add a{ width:41px; height:24px; background-position:-219px 0; padding-left:27px; }
+.main .content .left .table .operate .button .but li.add a:hover{ background-position:-219px -24px; }
+
+.main .content .left .table .operate .button .but li.save{ width:68px; height:24px; }
+.main .content .left .table .operate .button .but li.save a{ width:41px; height:24px; background-position:-287px 0; padding-left:27px; }
+.main .content .left .table .operate .button .but li.save a:hover{ background-position:-287px -24px; }
+
+.main .content .left .table .operate .button .but li.return{ width:68px; height:24px; }
+.main .content .left .table .operate .button .but li.return a{ width:41px; height:24px; background-position:-423px 0; padding-left:27px; }
+.main .content .left .table .operate .button .but li.return a:hover{ background-position:-423px -24px; }
+
+.main .content ul.submenu{ width:68px; height:auto; float:right; }
+.main .content ul.submenu li{ width:14px; height:auto; word-wrap:break-word;word-break:nomal; padding:48px 27px 12px 27px; background:url(../images/submenu-side.gif) no-repeat 0 0; position:relative; line-height:14px; cursor:pointer; }
+.main .content ul.submenu li.none{ background:none; }
+.main .content ul.submenu li img{ position:absolute; left:18px; top:10px; }
+.main .content ul.submenu li.selected span{ width:9px; height:15px; background:url(../images/submenu-selected.png) no-repeat 0 0; position:absolute; left:0; top:16px; }
+.main .content ul.submenu li.selected{ color:#0c69b5; }
+.main .content .left .table ul.form-header{ height:28px; width:99%; background:url(../images/table-bj.png) repeat-x; padding:3px 0 0 1%; }
+.main .content .left .table ul.form-header li{ height:28px; padding:0 10px; line-height:28px; text-align:center; display:inline-block; margin:0 1px; cursor:pointer; float:left; }
+.main .content .left .table ul.form-header li.selected{ height:27px; padding:0 10px; border:1px solid #ccc; border-bottom:none; background:#fbfbfb url(../images/form-header-bj.gif) repeat-x 0 12px; line-height:27px;color:#0c69b5; }
+.main .content .left .table ul.form-header li a{ text-decoration:none}
+
+
+.main .content .left .form{ border:1px solid #d9d9d9; _padding:0 1px; /*overflow:hidden;*/ }
+.main .content .left .form ul.form-header{ height:28px; width:99%; background:url(../images/table-bj.png) repeat-x; padding:3px 0 0 1%; }
+.main .content .left .form ul.form-header li{ height:28px; padding:0 10px; line-height:28px; text-align:center; display:inline-block; margin:0 1px; cursor:pointer; float:left; }
+.main .content .left .form ul.form-header li.selected{ height:27px; padding:0 10px; border:1px solid #ccc; border-bottom:none; background:#fbfbfb url(../images/form-header-bj.gif) repeat-x 0 12px; line-height:27px;color:#0c69b5; }
+.main .content .left .form ul.form-header li a{ text-decoration:none}
+.main .content .left .form .form-content{ padding:10px 1%; width:98%; background:#fbfbfb; margin:5px 0; }
+.main .content .left .form .form-content tr th{  text-align:right; padding:5px; font-weight:normal; }
+.main .content .left .form .form-content tr td{  padding:5px; text-align:left; }
+.main .content .left .form .form-content tr td .select{ border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    border-bottom: 1px solid #d9d9d9;
+    line-height:22px;background:#fff;
+    }
+.main .content .left .form .form-content tr td .text{ border:1px solid #d9d9d9; height:20px; line-height:20px; border-top-color:#c0c0c0; background:#fff; }
+.main .content .left .form .form-content tr td .textarea{ border:1px solid #d9d9d9; line-height:20px; border-top-color:#c0c0c0; background:#fff; }
+.main .content .left .form .form-content tr td label{ margin-right:10px; }
+.main .content .left .form .form-content tr td label input{ vertical-align:-2px; margin-right:4px; }
+.main .content .left .form .form-button{ height:33px; background:url(../images/form-button.gif) repeat-x; border-top:1px solid #d9d9d9; padding:10px 0 0 1%; width:99%; text-indent:0;}
+.main .content .left .form .form-button .add{ border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    height:24px; cursor:pointer;  background:url(../images/button.png) no-repeat -219px 0; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px; }
+.main .content .left .form .form-button .view{ width:68px; height:24px; cursor:pointer; background:url(../images/button.png) no-repeat -357px 0; border:none; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px; }
+.main .content .left .form .form-button .view2{ width:98px; height:24px; cursor:pointer; background:url(../images/button.png) no-repeat -458px -48px; border:none; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px; }
+
+
+.main .content .left .form .form-button .save{ width:68px; height:24px; cursor:pointer; background:url(../images/button.png) no-repeat -287px 0; border:none; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px; }
+.main .content .left .form .form-button .return{ width:68px; height:24px; cursor:pointer; background:url(../images/button.png) no-repeat -423px 0; border:none; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px; }
+.main .content .left .form .form-button .del{ width:68px; height:24px; cursor:pointer; background:url(../images/button.png) no-repeat -491px 0; border:none; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px; }
+.main .content .left .form .form-button .del2{ width:90px; height:24px; cursor:pointer; background:url(../images/button.png) no-repeat -559px 0; border:none; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px; }
+.main .content .left .form .form-button .add3{ width:100px; height:24px; cursor:pointer; background:url(../images/button.png) no-repeat -100px -48px; border:none; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px; }
+.main .content .left .form .form-button .save3{ width:100px; height:24px; cursor:pointer; background:url(../images/button.png) no-repeat -200px -48px; border:none; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px; }
+.main .content .left .form .form-button .del3{ width:100px; height:24px; cursor:pointer; background:url(../images/button.png) no-repeat 0 -48px; border:none; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px; }
+.main .content .left .form .form-button .refresh
+    {
+        width:68px; height:24px; cursor:pointer; background:url(../images/button.png) no-repeat -300px -48px; border:none; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px;
+        }
+    
+        
+    .main .content .left .form .form-button .refresh2
+    {
+        width:90px; height:24px; cursor:pointer; background:url(../images/button.png) no-repeat -368px -48px; border:none; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px;
+        }
+
+/* footer css start */
+.footer{ text-align:center; color:#9f9f9f; padding:20px 0; }
+.footer a{ color:#9f9f9f; text-decoration:none; }
+.footer a:hover{ color:#0c69b5; }
+
+/* tc css start */
+.mask{ background-color:black; opacity:0.5; position:absolute; left:0; top:0; z-index:10; width:100%; height:100%; display:block; }
+.tc_box{min-width:500px; max-width:800px; left: 298px; top: 125.5px; position:absolute; z-index:21; height:auto; display:none;}
+.tc_box .aui_border{ width:100%; border-collapse: collapse; }
+.tc_box .aui_border .aui_nw{ width:10px; height:41px; background:url(../images/aui_1.png) no-repeat 0 0; }
+.tc_box .aui_border .aui_n{ height:41px; background:url(../images/aui_2.png) repeat-x 0 0; }
+.tc_box .aui_border .aui_ne{ width:10px; height:41px; background:url(../images/aui_1.png) no-repeat -10px 0; }
+.tc_box .aui_border .aui_w{ width:10px; height:auto; background:url(../images/aui_3.png) repeat-y 0 0; }
+.tc_box .aui_border .aui_e{ width:10px; height:auto; background:url(../images/aui_3.png) repeat-y -10px 0; }
+.tc_box .aui_border .aui_sw{ width:10px; height:10px; background:url(../images/aui_4.png) no-repeat 0 0; }
+.tc_box .aui_border .aui_se{ width:10px; height:10px; background:url(../images/aui_4.png) no-repeat -10px 0; }
+.tc_box .aui_border .aui_s{ height:10px; background:url(../images/aui_5.png) repeat-x; }
+.tc_box .aui_border .aui_c{ background-color:#f7f7f7; padding:3px; }
+.tc_box .aui_border .aui_n .tc_title{ width:100%; height:34px; padding-top:2px; overflow:hidden; position:relative; }
+.tc_box .aui_border .aui_n .tc_title h3{ line-height:34px; color:#bce0ff; padding:0 5px; display:inline-block; }
+.tc_box .aui_border .aui_n .tc_title a.colse {
+display: inline-block;
+width: 19px;
+height: 18px;
+background: url(../images/s.png) no-repeat -40px 0;
+position: absolute;
+top: 9px;
+right: 9px;
+}
+.tc_box .aui_border .aui_n .tc_title a:hover.colse{ background: url(../images/s.png) no-repeat -40px -20px;}
+
+.tc_box .aui_border .aui_n .tc_title a.full_screen {
+display: inline-block;
+width: 19px;
+height: 18px;
+background: url(../images/s.png) no-repeat -20px 0;
+position: absolute;
+top: 9px;
+right: 29px;
+}
+.tc_box .aui_border .aui_n .tc_title a:hover.full_screen{ background: url(../images/s.png) no-repeat -20px -20px;}
+
+.tc_box .aui_border .aui_n .tc_title a.reduction {
+display: inline-block;
+width: 19px;
+height: 18px;
+background: url(../images/s.png) no-repeat -60px 0;
+position: absolute;
+top: 9px;
+right: 29px;
+}
+.tc_box .aui_border .aui_n .tc_title a:hover.reduction{ background: url(../images/s.png) no-repeat -60px -20px;}
+
+.tc_box .aui_border .aui_c .tc_table{ border:1px solid #d9d9d9; width:100%; border-collapse:collapse; }
+.tc_box .aui_border .aui_c .tc_table thead tr td{ height:31px; background:url(../images/table-bj.png) repeat-x; }
+.tc_box .aui_border .aui_c .tc_table thead tr td div.table-headerCell{ background:url(../images/table-thead-side.png) no-repeat 0 0; height:30px; line-height:30px; text-indent:10px; }
+.tc_box .aui_border .aui_c .tc_table thead tr td div.none{ background:none; }
+.tc_box .aui_border .aui_c .tc_table tbody tr td{ height:27px; border-top:1px solid #ebebeb; vertical-align:middle; padding:0 10px; }
+.tc_box .aui_border .aui_c .tc_pager{ height:28px; background:url(../images/operate-bj.png) repeat-x; border:1px solid #d9d9d9; border-top:none; border-bottom-color:#d3d3d3; padding:6px 0 0 0; position:relative;  }
+.tc_box .aui_border .aui_c .tc_pager .pager{ display:inline-block; height:28px; float:right;}
+.tc_box .aui_border .aui_c .tc_table tbody tr td a{ color:#0c69b5; text-decoration:none; }
+.tc_box .aui_border .aui_c .tc_table tbody tr td a:hover{ color:#FF6600; text-decoration:underline;}
+.tc_box .aui_border .aui_c .tc_search{ width:100%; height:auto; padding:5px 0 10px 0; }
+.tc_box .aui_border .aui_c .tc_search .select,.tc_box .aui_border .aui_c .tc_table2 .select{height:22px; line-height:22px;border:1px solid #d9d9d9;border-top-color:#c0c0c0; background:#fff;vertical-align:top;}
+.tc_box .aui_border .aui_c .tc_search input.text,.tc_box .aui_border .aui_c .tc_content .edit input.text,.tc_box .aui_border .aui_c .tc_table2 input.text{ border:1px solid #d9d9d9; height:20px; line-height:20px; border-top-color:#c0c0c0; background:#fff; vertical-align:top;}
+.tc_box .aui_border .aui_c .tc_search a.search-sub{ background:url(../images/button.png) no-repeat -355px 0; display:inline-block; width:68px; height:24px; line-height:23px; text-indent:28px; text-decoration:none; vertical-align:top; }
+.tc_box .aui_border .aui_c .tc_search a.search-sub:hover{ background-position:-355px -24px; color:#0c69b5; }
+.tc_box .aui_border .aui_c .tc_table2{ width:100%; height:auto; border:1px solid #d9d9d9; border-bottom:none; border-collapse:collapse; }
+.tc_box .aui_border .aui_c .tc_table2 thead td{height:31px; background:url(../images/table-bj.png) repeat-x; text-indent:10px; line-height:30px; }
+.tc_box .aui_border .aui_c .tc_table2 tbody th,.tc_box .aui_border .aui_c .tc_table2 tbody td{ border-bottom:1px solid #d9d9d9; padding:7px 5px; font-weight:normal; }
+.tc_box .aui_border .aui_c .tc_table2 tbody th{ text-align:right;}
+.tc_box .aui_border .aui_c .tc_button{ height:30px; padding:7px 0 0 10px; background:url(../images/form-button.gif) repeat-x;border:1px solid #d9d9d9; border-top:none;} 
+
+.tc_box .aui_border .aui_c .tc_button .reset{ width:68px; height:24px; cursor:pointer; background:url(../images/button.png) no-repeat -423px 0; border:none; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px; }
+.tc_box .aui_border .aui_c .tc_button .choose{ width:68px; height:24px; cursor:pointer; background:url(../images/button.png) no-repeat -287px 0; border:none; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px; }
+.tc_box .aui_border .aui_c .tc_button a.reset{ width:68px; height:24px; background:url(../images/button.png) no-repeat -423px 0; display:inline-block; line-height:23px; text-indent:28px; text-decoration:none; vertical-align:top; _float:left; }
+.tc_box .aui_border .aui_c .tc_button a.reset:hover{ background-position:-423px -24px; color:#0c69b5; }
+.tc_box .aui_border .aui_c .tc_button a.choose,.tc_box .aui_border .aui_c .tc_content .edit a.choose{ width:68px; height:24px; background:url(../images/button.png) no-repeat -287px 0; display:inline-block; line-height:23px; text-indent:28px; text-decoration:none; vertical-align:top; _float:left; }
+.tc_box .aui_border .aui_c .tc_button a.choose:hover,.tc_box .aui_border .aui_c .tc_content .edit a.choose:hover{ background-position:-287px -24px; color:#0c69b5; }
+.tc_box .aui_border .aui_n .tc_title ul{ height:28px; padding-top:6px; }
+.tc_box .aui_border .aui_n .tc_title ul li{ height:28px; line-height:26px;  float:left; margin:0 1px; border-radius:3px 3px 0 0; padding:0 10px; cursor:pointer;color:#bce0ff; }
+.tc_box .aui_border .aui_n .tc_title ul li.selected{ background:#fff url(../images/form-header-bj.gif) repeat-x 0 14px; color:#0c69b5;  }
+.tc_box .aui_border .aui_c .tc_content .tc_left{ float:left; border:1px solid #d9d9d9; padding:10px; overflow:auto; }
+.tc_box .aui_border .aui_c .tc_content .tc_right{ float:right; }
+.tc_box .aui_border .aui_c .tc_content .edit{ border:1px solid #d9d9d9; border-top:none; padding:15px; overflow:hidden; }
+.tc_box .aui_border .aui_c .tc_content .edit label{ margin-right:10px; float:left; }
+
+/*pager*/
+.main .content .left .table .operate .pager{ float:right; display:inline-block; padding:6px 0 0 0; position:relative; }
+.main .content .left .table .operate .pager a,.main .content .left .table .operate .pager span,.tc_box .aui_border .aui_c .tc_pager .pager a,.tc_box .aui_border .aui_c .tc_pager .pager span{ float:left; display:inline-block; height:20px; line-height:20px; border:1px solid #ccc; padding:0 5px; color:#888; margin:0 1px; text-decoration:none; background:#fdfcfc; }
+.main .content .left .table .operate .pager span.txt,.tc_box .aui_border .aui_c .tc_pager .pager span.txt,.main .content .left .table .operate .pager span.m,.tc_box .aui_border .aui_c .tc_pager .pager span.m{ border:none; line-height:22px; background:none;}
+.main .content .left .table .operate .pager span.cur,.main .content .left .table .operate .pager a:hover,.tc_box .aui_border .aui_c .tc_pager .pager span.cur,.tc_box .aui_border .aui_c .tc_pager .pager a:hover{ background:#e7f4fc; border-color:#afd8ed; color:#0c69b5;}
+
+.main .content .left .table .operate .pager a.more,.tc_box .aui_border .aui_c .tc_pager .pager a.more{ background:url(../images/button.png) no-repeat -203px 0; width:16px; height:16px; margin:3px 10px 0 8px; border:none; padding:0; }
+.main .content .left .table .operate .pager .jump,.tc_box .aui_border .aui_c .tc_pager .pager .jump{ width:79px; height:34px; background:url(../images/jump-bj.png) no-repeat; position:absolute; right:-2px; bottom:22px; padding:6px 0 0 6px; }
+.main .content .left .table .operate .pager .jump .text,.tc_box .aui_border .aui_c .tc_pager .pager .jump .text{ width:43px; height:21px; border:1px solid #cdcdcd; float:left; border-radius:4px 0 0 4px; text-indent:5px; }
+.main .content .left .table .operate .pager .jump a.jump-sub,.tc_box .aui_border .aui_c .tc_pager .pager .jump a.jump-sub{ width:28px; height:24px; float:left; background:url(../images/button.png) no-repeat -56px 0; text-align:center; border:none; padding:0; margin:0;}
+.main .content .left .table .operate .pager .jump a.jump-sub:hover,.tc_box .aui_border .aui_c .tc_pager .pager .jump a.jump-sub:hover{ background-position:-56px -24px; color:#0c69b5; }
+
+.add{ width:68px; height:24px; cursor:pointer; text-decoration:none;  background:url(../images/button.png) no-repeat -219px 0; border:none; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px; }
+.save{ width:68px; height:24px; cursor:pointer; text-decoration:none; background:url(../images/button.png) no-repeat -287px 0; border:none; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px; }
+.return{ width:68px; height:24px; cursor:pointer; text-decoration:none; background:url(../images/button.png) no-repeat -423px 0; border:none; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px; }
+.del{ width:68px; height:24px; cursor:pointer; text-decoration:none; background:url(../images/button.png) no-repeat -491px 0; border:none; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px; }
+.del2{ width:90px; height:24px; cursor:pointer; text-decoration:none; background:url(../images/button.png) no-repeat -559px 0; border:none; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px; }
+.add3{ width:100px; height:24px; cursor:pointer; text-decoration:none; background:url(../images/button.png) no-repeat -100px -48px; border:none; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px; }
+.save3{ width:100px; height:24px; cursor:pointer; text-decoration:none; background:url(../images/button.png) no-repeat -200px -48px; border:none; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px; }
+.del3{ width:100px; height:24px; cursor:pointer; text-decoration:none; background:url(../images/button.png) no-repeat 0 -48px; border:none; line-height:24px; text-align:left; text-indent:26px; float:left; margin-right:5px; }
+.hover{ background:#f4f9b5;}
+
+ul.ztree1 {margin-top: 10px;border: 1px solid #617775;background: #f0f6e4;width:220px;height:360px;overflow-y:scroll;overflow-x:auto;}
+.sperror { color:Red; font-weight:bold;}
+
+
+
+/* CSS Portfolio*/
+/* 修改模块宽度 和portfolio 的总宽度限制  2014/02/27 */
+.portfolio{ padding:10px 10px 0 10px; width:100%; min-width:950px;  height:auto;}
+.portfolio a{ text-decoration: none;}
+.portfolio p{ height:30px; margin-bottom:10px; line-height:30px; width:100%; border:1px solid #d9d9d9; text-indent:10px;}
+.portfolio .portlist{ width:100%; border:1px solid #d9d9d9; border-bottom:none; margin-bottom:10px;}
+.portfolio .portlist .top{ height:46px; width:100%; position:relative; background:url(../images/portfolio_dd_bj.gif) repeat-x; border-bottom:1px solid #d9d9d9;}
+.portfolio .portlist .top h3{ position:absolute; left:12px; height:30px; top:5px; line-height:30px; color:#0c69b5;}
+.portfolio .portlist .top div{ position:absolute; display:inline-block; right:12px; height:30px; line-height:30px; top:5px;}
+.portfolio .portlist .top div label{ display:inline-block; margin:0 5px;}
+.portfolio .portlist .top div b{ color:#f37a04;}
+.portfolio .portlist .top div .input.text{ vertical-align:middle;}
+.portfolio .portlist .contlist dl dd{ width:100%; height:32px; border-bottom:1px solid #d9d9d9; background:url(../images/portfolio_dt_li_bj.gif) repeat-x; overflow:hidden;}
+.portfolio .portlist .contlist dl dd h4{ float:left; display:inline-block; line-height:32px; text-indent:26px; cursor:pointer; font-weight:normal; background:url(../images/portfolio_dt_li_icon1.gif) no-repeat 12px 12px;}
+.portfolio .portlist .contlist dl dd span{ float:right; display:inline-block; height:32px; line-height:32px; width:140px; padding-left:15px; background:url(../images/portfolio_dt_li_border.gif) no-repeat 0 0;}
+.portfolio .portlist .contlist dl dd.selected{ background-position:0 -38px;}
+.portfolio .portlist .contlist dl dd.selected h4{ background:url(../images/portfolio_dt_li_icon2.gif) no-repeat 12px 12px;color:#0c69b5;}
+.portfolio .portlist .contlist dl dd.selected span{ background-position:0 -38px;}
+.portfolio .portlist .contlist dl dt ul{ overflow:hidden;}
+.portfolio .portlist .contlist dl dt ul.list{ padding-bottom:10px; border-bottom:1px solid #d9d9d9; width:100%; height:auto;}
+.portfolio .portlist .contlist dl dt ul li{ width:639px; float:left; height:32px; line-height:32px; border-bottom:1px solid #d9d9d9;}
+.portfolio .contlist dl dt ul.title{background:#f2f1f1;}
+.portfolio .contlist dl dt ul li.border{width:100%; border-right:1px solid #d9d9d9;}
+.portfolio .portlist .contlist dl dt ul li span{ width:23%; height:32px; display:inline-block;float:left; text-indent:10px;}
+.portfolio .portlist .contlist dl dt ul li label{ width:9%; _width:17%; height:32px; display:inline-block; float:left;text-indent:10px; background:url(../images/portfolio_dt_span_border.gif) no-repeat 0 8px;}
+.portfolio .portlist .contlist dl dt ul li span a,.portfolio p a{ color:#0c69b5; text-decoration:none;  margin-right:5px;}
+.portfolio .portlist .contlist dl dt ul li span a:hover,.portfolio p a:hover{ color:#f37a04;}
+.portfolio .portlist input.text{ height:18px; border:1px solid #ccc; background:#fff; line-height:18px; text-indent:2px;}
+.portfolio .portlist .contlist dl dt ul li label .text{ float:left; margin:6px 6px 0 6px;}
+.portfolio .portlist .contlist dl dt ul li label a{ display:inline-block; float:left; width:9px; height:9px; background:url(../images/btn-jj.gif) no-repeat; margin-top:11px;}
+.portfolio .portlist .contlist dl dt ul li label a.minus{ margin-left:10px;}
+.portfolio .portlist .contlist dl dt ul li label a.plus{ background-position:-9px 0;}
+
+
+/*新增样式 查询  开始*/
+.main .content .left .table .search{  padding-top:7px;padding-left:5px; padding-bottom:5px;  border-top:none; border-bottom-color:#d3d3d3; }
+.main .content .left .table .search p{ margin-top:5px;  vertical-align:middle;}
+.search-sub{ background:url(../images/button.png) no-repeat -355px 0; display:inline-block; width:68px; height:24px; line-height:23px; text-indent:28px; text-decoration:none; vertical-align:top; }
+.search-sub3{ background:url(../images/button.png) no-repeat -458px -48px; display:inline-block; width:90px; height:24px; line-height:23px; text-indent:28px; text-decoration:none; vertical-align:top; }
+.search-sub:hover{ background-position:-355px -24px; color:#0c69b5; }
+.search input.text{ border:1px solid #d9d9d9; height:20px; line-height:20px; border-top-color:#c0c0c0; background:#fff; vertical-align:top;}
+.select{border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    border-bottom: 1px solid #d9d9d9;
+    line-height:22px;background:#fff;vertical-align:top;
+}
+
+
+
+
+/* ==================样式 jquery.autocomplete.js ==================*/
+.ac_results {
+	padding: 0px;
+	border: 1px solid black;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+}
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.ac_results li {
+	margin: 0px;
+	padding: 2px 5px;
+	cursor: default;
+	display: block;
+	/* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+	/*width: 100%;*/
+	font: menu;
+	font-size: 12px;
+	/* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+	line-height: 16px;
+	overflow: hidden;
+}
+.ac_loading {background: white url('indicator.gif') right center no-repeat;}
+.ac_odd {background-color: #eee;}
+.ac_over {background-color: #0A246A;color: white;}
+/* ==================样式 jquery.autocomplete.js ==================*/

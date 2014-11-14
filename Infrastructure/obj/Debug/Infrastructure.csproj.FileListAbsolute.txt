@@ -1,0 +1,12 @@
+C:\SVN\NewERPProjects\SourceCodes\NewERP-Application\NewWebSite\NewWebSite\Infrastructure\bin\Debug\Infrastructure.dll
+C:\SVN\NewERPProjects\SourceCodes\NewERP-Application\NewWebSite\NewWebSite\Infrastructure\bin\Debug\Infrastructure.pdb
+C:\SVN\NewERPProjects\SourceCodes\NewERP-Application\NewWebSite\NewWebSite\Infrastructure\bin\Debug\MySql.Data.dll
+C:\SVN\NewERPProjects\SourceCodes\NewERP-Application\NewWebSite\NewWebSite\Infrastructure\obj\Debug\Infrastructure.dll
+C:\SVN\NewERPProjects\SourceCodes\NewERP-Application\NewWebSite\NewWebSite\Infrastructure\obj\Debug\Infrastructure.pdb
+C:\SVN\NewERPProjects\SourceCodes\NewERP-Application\NewWebSite\NewWebSite\Infrastructure\bin\Debug\Oracle.DataAccess.dll
+C:\SVN\NewERPProjects\SourceCodes\NewERP-Application\NewWebSite\NewWebSite\Infrastructure\obj\Debug\Infrastructure.csprojResolveAssemblyReference.cache
+C:\SVN\Meeting\Infrastructure\bin\Debug\Infrastructure.dll
+C:\SVN\Meeting\Infrastructure\bin\Debug\Infrastructure.pdb
+C:\SVN\Meeting\Infrastructure\obj\Debug\Infrastructure.dll
+C:\SVN\Meeting\Infrastructure\obj\Debug\Infrastructure.pdb
+C:\SVN\Meeting\Infrastructure\obj\Debug\Infrastructure.csprojResolveAssemblyReference.cache

@@ -1,0 +1,12 @@
+#NOTE: Other - Other at 2014-06-30 11:14:32
+Memoire:start UpFile http://localhost:21291/UserControls/Upload.ashx     
+
+#NOTE: Other - Other at 2014-06-30 11:14:32
+Memoire:end UpFile http://localhost:21291/UserControls/Upload.ashx     
+
+#NOTE: Other - Other at 2014-06-30 15:20:15
+Memoire:C:\SVN\Meeting\Meeting\ExportActivity_20140630152015.xls
+
+#NOTE: Other - Other at 2014-06-30 15:21:27
+Memoire:C:\SVN\Meeting\Meeting\ExportActivity_20140630152127.xls
+

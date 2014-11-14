@@ -1,0 +1,17 @@
+H:\Lottery\BusinessTier\bin\Debug\BusinessTier.dll
+H:\Lottery\BusinessTier\bin\Debug\BusinessTier.pdb
+H:\Lottery\BusinessTier\bin\Debug\Entities.dll
+H:\Lottery\BusinessTier\bin\Debug\Infrastructure.dll
+H:\Lottery\BusinessTier\bin\Debug\log4net.dll
+H:\Lottery\BusinessTier\bin\Debug\MySql.Data.dll
+H:\Lottery\BusinessTier\bin\Debug\Entities.pdb
+H:\Lottery\BusinessTier\obj\Debug\ResolveAssemblyReference.cache
+H:\Lottery\BusinessTier\obj\Debug\BusinessTier.dll
+H:\Lottery\BusinessTier\obj\Debug\BusinessTier.pdb
+C:\SVN\Meeting\BusinessTier\obj\Debug\BusinessTier.csprojResolveAssemblyReference.cache
+C:\SVN\Meeting\BusinessTier\bin\Debug\BusinessTier.dll
+C:\SVN\Meeting\BusinessTier\bin\Debug\BusinessTier.pdb
+C:\SVN\Meeting\BusinessTier\bin\Debug\Entities.dll
+C:\SVN\Meeting\BusinessTier\bin\Debug\Entities.pdb
+C:\SVN\Meeting\BusinessTier\obj\Debug\BusinessTier.dll
+C:\SVN\Meeting\BusinessTier\obj\Debug\BusinessTier.pdb

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Entities.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="EntitiesStoreContainer">
+    <EntitySet Name="tblActivity" EntityType="Entities.Store.tblActivity" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblCount" EntityType="Entities.Store.tblCount" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblCustomer" EntityType="Entities.Store.tblCustomer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblInvite" EntityType="Entities.Store.tblInvite" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="tblActivity">
+    <Key>
+      <PropertyRef Name="ActivityID" />
+    </Key>
+    <Property Name="ActivityID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="ActivityTime" Type="datetime" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar" MaxLength="200" />
+    <Property Name="IndustryDes" Type="nvarchar" MaxLength="100" />
+    <Property Name="AttendTotal" Type="int" />
+    <Property Name="SignedTotal" Type="int" />
+    <Property Name="SignedAmount" Type="decimal" Scale="2" />
+    <Property Name="StartTime" Type="datetime" />
+    <Property Name="EndTime" Type="datetime" />
+    <Property Name="CreateTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblCount">
+    <Key>
+      <PropertyRef Name="Total" />
+    </Key>
+    <Property Name="Total" Type="int" Nullable="false" />
+    <Property Name="Signed" Type="int" />
+    <Property Name="Quarter" Type="int" />
+    <Property Name="QuaTotal" Type="int" />
+    <Property Name="QuaSigned" Type="int" />
+    <Property Name="Week" Type="int" />
+    <Property Name="WeekSigned" Type="int" />
+  </EntityType>
+  <EntityType Name="tblCustomer">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerName" Type="nvarchar" MaxLength="50" />
+    <Property Name="City" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="tblInvite">
+    <Key>
+      <PropertyRef Name="InviteID" />
+    </Key>
+    <Property Name="InviteID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerID" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Industry" Type="nvarchar" MaxLength="50" />
+    <Property Name="IndustryDes" Type="nvarchar" MaxLength="100" />
+    <Property Name="Area" Type="nvarchar" MaxLength="50" />
+    <Property Name="AreaDes" Type="nvarchar" MaxLength="50" />
+    <Property Name="ContactName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Contact" Type="nvarchar" MaxLength="50" />
+    <Property Name="Attend" Type="bit" />
+    <Property Name="AttendTime" Type="date" />
+    <Property Name="IsExternal" Type="bit" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="500" />
+    <Property Name="ProductAmount" Type="float" />
+    <Property Name="SignedTime" Type="date" />
+    <Property Name="ActivityID" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateTime" Type="date" />
+  </EntityType>
+  <Function Name="ProCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+</Schema>

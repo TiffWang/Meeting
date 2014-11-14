@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EntitiesStoreContainer" CdmEntityContainer="DataBase">
+    <EntitySetMapping Name="tblActivity">
+      <EntityTypeMapping TypeName="Entities.ActivityRow">
+        <MappingFragment StoreEntitySet="tblActivity">
+          <ScalarProperty Name="ActivityID" ColumnName="ActivityID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ActivityTime" ColumnName="ActivityTime" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="IndustryDes" ColumnName="IndustryDes" />
+          <ScalarProperty Name="AttendTotal" ColumnName="AttendTotal" />
+          <ScalarProperty Name="SignedTotal" ColumnName="SignedTotal" />
+          <ScalarProperty Name="SignedAmount" ColumnName="SignedAmount" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCustomer">
+      <EntityTypeMapping TypeName="Entities.CustomerRow">
+        <MappingFragment StoreEntitySet="tblCustomer">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="City" ColumnName="City" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblInvite">
+      <EntityTypeMapping TypeName="Entities.InviteRow">
+        <MappingFragment StoreEntitySet="tblInvite">
+          <ScalarProperty Name="InviteID" ColumnName="InviteID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="Industry" ColumnName="Industry" />
+          <ScalarProperty Name="IndustryDes" ColumnName="IndustryDes" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="AreaDes" ColumnName="AreaDes" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="Attend" ColumnName="Attend" />
+          <ScalarProperty Name="AttendTime" ColumnName="AttendTime" />
+          <ScalarProperty Name="IsExternal" ColumnName="IsExternal" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductAmount" ColumnName="ProductAmount" />
+          <ScalarProperty Name="SignedTime" ColumnName="SignedTime" />
+          <ScalarProperty Name="ActivityID" ColumnName="ActivityID" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCount">
+      <EntityTypeMapping TypeName="Entities.CountRow">
+        <MappingFragment StoreEntitySet="tblCount">
+          <ScalarProperty Name="WeekSigned" ColumnName="WeekSigned" />
+          <ScalarProperty Name="Week" ColumnName="Week" />
+          <ScalarProperty Name="QuaSigned" ColumnName="QuaSigned" />
+          <ScalarProperty Name="QuaTotal" ColumnName="QuaTotal" />
+          <ScalarProperty Name="Quarter" ColumnName="Quarter" />
+          <ScalarProperty Name="Signed" ColumnName="Signed" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ProCount" FunctionName="Entities.Store.ProCount" />
+  </EntityContainerMapping>
+</Mapping>

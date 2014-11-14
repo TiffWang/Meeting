@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Entities" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="DataBase" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblActivity" EntityType="Entities.ActivityRow" />
+    <EntitySet Name="tblCustomer" EntityType="Entities.CustomerRow" />
+    <EntitySet Name="tblInvite" EntityType="Entities.InviteRow" />
+    <EntitySet Name="tblCount" EntityType="Entities.CountRow" />
+    <FunctionImport Name="ProCount" />
+  </EntityContainer>
+  <EntityType Name="ActivityRow">
+    <Key>
+      <PropertyRef Name="ActivityID" />
+    </Key>
+    <Property Name="ActivityID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ActivityTime" Type="DateTime" />
+    <Property Name="Type" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="IndustryDes" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="AttendTotal" Type="Int32" />
+    <Property Name="SignedTotal" Type="Int32" />
+    <Property Name="SignedAmount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="StartTime" Type="DateTime" />
+    <Property Name="EndTime" Type="DateTime" />
+    <Property Name="CreateTime" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="CustomerRow">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="InviteRow">
+    <Key>
+      <PropertyRef Name="InviteID" />
+    </Key>
+    <Property Name="InviteID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CustomerName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Industry" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IndustryDes" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Area" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AreaDes" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ContactName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Contact" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Attend" Type="Boolean" />
+    <Property Name="AttendTime" Type="DateTime" />
+    <Property Name="IsExternal" Type="Boolean" />
+    <Property Name="Status" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProductName" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="ProductAmount" Type="Double" />
+    <Property Name="SignedTime" Type="DateTime" />
+    <Property Name="ActivityID" Type="String" />
+    <Property Name="CreateTime" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="CountRow">
+    <Key>
+      <PropertyRef Name="Total" />
+    </Key>
+    <Property Type="Int32" Name="Total" Nullable="false" />
+    <Property Type="Int32" Name="Signed" />
+    <Property Type="Int32" Name="Quarter" />
+    <Property Type="Int32" Name="QuaTotal" />
+    <Property Type="Int32" Name="QuaSigned" />
+    <Property Type="Int32" Name="Week" />
+    <Property Type="Int32" Name="WeekSigned" />
+  </EntityType>
+</Schema>
