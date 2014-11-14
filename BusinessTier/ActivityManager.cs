@@ -14,7 +14,7 @@ namespace BusinessTier
         /// </summary>
         /// <param name="row"></param>
         /// <returns>数据ID</returns>
-        /// by: Tiff.Wang 2014-06-21
+        /// by: Tiff.Wang 2014-11-09
         public static string Create(ActivityRow row)
         {
             using (DataBase db = new DataBase())
